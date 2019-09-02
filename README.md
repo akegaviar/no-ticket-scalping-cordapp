@@ -33,9 +33,9 @@ Each CorDapp has the following components:
 
 noScalpDapp is no exception and has the components written in Kotlin:
 
-* noScalpFlow.kt — the CorDapp flow that starts sessions between the nodes and builds and verifies the ticket distribution transactions.
-* noScalpContract.kt — the CorDapp contract for the ticket distribution transaction.
-* noScalpState.kt — the CorDapp state that creates an on-ledger fact that can be retrieved by the nodes participating in the transaction.
+* [noScalpFlow.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/noScalpDapp/src/main/kotlin/com/noScalpDapp/noScalpFlow.kt) — the CorDapp flow that starts sessions between the nodes and builds and verifies the ticket distribution transactions.
+* [noScalpContract.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/noScalpDapp/src/main/kotlin/com/noScalpDapp/noScalpContract.kt) — the CorDapp contract for the ticket distribution transaction.
+* [noScalpState.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/noScalpDapp/src/main/kotlin/com/noScalpDapp/noScalpState.kt) — the CorDapp state that creates an on-ledger fact that can be retrieved by the nodes participating in the transaction.
 
 The code in `noScalpFlow`, `noScalpContract`, and `noScalpState` has comments explaining the what and how, so do check them.
 
