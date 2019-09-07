@@ -12,6 +12,10 @@ import net.corda.core.transactions.LedgerTransaction
 val NOSCALP_CONTRACT_ID = "com.noScalpDapp.noScalpContract"
 
 class noScalpContract : Contract {
+    companion object {
+        @JvmStatic
+        val ID = "com.noScalpDapp.noScalpContract"
+    }
     // Our Create command.
     class Create : CommandData
 

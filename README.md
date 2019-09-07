@@ -44,7 +44,7 @@ The code in `noScalpFlow`, `noScalpContract`, and `noScalpState` has comments ex
 By default, the `build.gradle` script in root comes with the `deployNodes` instructions to deploy a network with the following nodes:
 
 * A [network map](https://docs.dev.chainstack.com/blockchains/corda#network-map-service) and notary node located in Sydney, Australia.
-* DistributorA node located in New Yor, USA.
+* DistributorA node located in New York, USA.
 * DistributorB located in Tokyo, Japan.
 * DistributorC located in Singapore, Singapore.
 

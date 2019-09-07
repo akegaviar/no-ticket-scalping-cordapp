@@ -1,5 +1,6 @@
 package com.noScalpDapp
 
+import net.corda.core.contracts.BelongsToContract
 import net.corda.core.contracts.*
 import net.corda.core.contracts.CommandData
 import net.corda.core.contracts.Contract
@@ -12,7 +13,7 @@ import net.corda.core.transactions.LedgerTransaction
 // *********
 // Registers an on-ledger fact that the tickets have been distributed
 // from one verified distributor to another.
-
+@BelongsToContract(noScalpContract::class)
 data class noScalpState(val ticket: Int,
                             val event: String,
                             val fromDistributor: Party,
