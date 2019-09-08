@@ -189,6 +189,7 @@ $ curl url http://localhots:50005/api/noScalpDapp/me
 {
   "me" : "O=DistributorA, L=New York, C=US"
 }
+```
 
 ## Known issues
 
