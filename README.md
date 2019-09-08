@@ -20,7 +20,7 @@ In this framework, one node equals one ticket distributor. A distributor can be 
 
 You can interact with noScalpDapp via the Corda shell that starts when you run `runnodes` or via a webserver client that you can build separately.
 
-## Pre-requisites
+## Prerequisites
 
 1. Clone this repository to your machine.
 1. Set up your CorDapp development environment. See [Corda docs: Set-up instructions](https://docs.corda.net/getting-set-up.html#set-up-instructions).
