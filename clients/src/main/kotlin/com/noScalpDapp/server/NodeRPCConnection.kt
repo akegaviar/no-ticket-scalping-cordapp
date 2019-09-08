@@ -50,8 +50,4 @@ open class NodeRPCConnection(
     fun close() {
         rpcConnection.notifyServerAndClose()
     }
-
-
-
-
 }
