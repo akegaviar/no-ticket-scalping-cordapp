@@ -89,7 +89,7 @@ The output should be:
 com.noScalpDapp.noScalpFlow
 ```
 
-## Interact with noScalpDapp
+## Interact with noScalpDapp through shell
 
 To do a ticket distribution, run:
 
