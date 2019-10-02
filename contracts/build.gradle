@@ -19,12 +19,6 @@ cordapp {
         licence "MIT"
         versionId 1
     }
-    workflow {
-        name "noScalpDapp"
-        vendor "Chainstack"
-        licence "MIT"
-        versionId 1
-    }
 }
 
 sourceSets {

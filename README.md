@@ -45,17 +45,34 @@ Each CorDapp has the following components:
 
 noScalpDapp is no exception and has the components written in Kotlin:
 
-* [noScalpFlow.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/noScalpDapp/src/main/kotlin/com/noScalpDapp/noScalpFlow.kt) — the CorDapp flow that starts sessions between the nodes and builds and verifies the ticket distribution transactions.
-* [noScalpContract.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/noScalpDapp/src/main/kotlin/com/noScalpDapp/noScalpContract.kt) — the CorDapp contract for the ticket distribution transaction.
-* [noScalpState.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/noScalpDapp/src/main/kotlin/com/noScalpDapp/noScalpState.kt) — the CorDapp state that creates an on-ledger fact that can be retrieved by the nodes participating in the transaction.
+* [noScalpFlow.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/workflows/src/main/kotlin/com/noScalpDapp/noScalpFlow.kt) — the CorDapp flow that starts sessions between the nodes and builds and verifies the ticket distribution transactions.
+* [noScalpContract.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/contracts/src/main/kotlin/com/noScalpDapp/noScalpContract.kt) — the CorDapp contract for the ticket distribution transaction.
+* [noScalpState.kt](https://github.com/akegaviar/no-ticket-scalping-cordapp/blob/master/contracts/src/main/kotlin/com/noScalpDapp/noScalpState.kt) — the CorDapp state that creates an on-ledger fact that can be retrieved by the nodes participating in the transaction.
 
 The code in `noScalpFlow`, `noScalpContract`, and `noScalpState` has comments explaining the what and how, so do check them.
 
 ## Build and deploy noScalpDapp
 
-By default, the `build.gradle` script in root comes with the `deployNodes` instructions to deploy a network with the following nodes:
+### Build to run with Chainstack
 
-* A [network map](https://docs.dev.chainstack.com/blockchains/corda#network-map-service) and notary node located in Sydney, Australia.
+The `build.gradle` script in root comes with the `jar` instructions to build the CorDapp:
+
+``` sh
+./gradlew jar
+```
+
+This will build the CorDapp and place the JAR files in:
+
+* Contract: `/contracts/build/libs/`
+* Workflow: `/workflows/build/libs`
+
+You can now load the two JAR files one by one on Chainstack nodes.
+
+### Build to run with locally deployed nodes
+
+The `build.gradle` script in root comes with the `deployNodes` instructions to deploy a network with the following nodes:
+
+* A notary node located in Sydney, Australia.
 * DistributorA node located in New York, USA.
 * DistributorB located in Tokyo, Japan.
 * DistributorC located in Singapore, Singapore.
