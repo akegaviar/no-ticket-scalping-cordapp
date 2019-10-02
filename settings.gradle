@@ -1,2 +1,2 @@
-include 'noScalpDapp'
-include 'clients'
+include 'workflows'
+include 'contracts'

@@ -70,7 +70,8 @@ dependencies {
     cordaRuntime "org.apache.logging.log4j:log4j-slf4j-impl:$log4j_version"
 
     // CorDapp dependencies
-    cordapp project(":noScalpDapp")
+     cordapp project(":workflows")
+     cordapp project(":contracts")
 }
 
 jar {
@@ -89,7 +90,8 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
 
 task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
     nodeDefaults {
-        cordapp "$project.group:noScalpDapp:$project.version"
+        cordapp project(':contracts')
+        cordapp project(':workflows')
     }
     node {
         name "O=Notary,L=Sydney,C=AU"
