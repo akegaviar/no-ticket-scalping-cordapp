@@ -131,7 +131,7 @@ You can now check the registered transaction on the node where you ran the trans
 To check the transaction:
 
 ``` sh
-run vaultQuery contractStateType: com.noScalpDapp.noScalpState
+run vaultQuery contractStateType: com.noScalpDapp.states.noScalpState
 ```
 
 This will print the registered transaction details.
