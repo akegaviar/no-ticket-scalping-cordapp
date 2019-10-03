@@ -45,7 +45,9 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-log4j2:$spring_boot_version"
     compile "org.apache.logging.log4j:log4j-web:$log4j_version"
 
-    cordapp project(":noScalpDapp")
+     // CorDapp dependencies
+     cordapp project(":workflows")
+     cordapp project(":contracts")
 }
 
 apply from: 'repositories.gradle'

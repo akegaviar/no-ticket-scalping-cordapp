@@ -202,7 +202,7 @@ The POST requests are defined via `@PostMapping` in [MainController.kt](https://
 A GET request example to see the node identity:
 
 ``` sh
-$ curl url http://localhots:50005/api/noScalpDapp/me
+$ curl url http://localhost:50005/api/noScalpDapp/me
 {
   "me" : "O=DistributorA, L=New York, C=US"
 }

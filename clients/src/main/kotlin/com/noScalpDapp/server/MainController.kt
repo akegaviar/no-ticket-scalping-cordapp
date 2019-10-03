@@ -1,7 +1,7 @@
 package com.noScalpDapp.server
 
-import com.noScalpDapp.noScalpFlow.Initiator
-import com.noScalpDapp.noScalpState
+import com.noScalpDapp.flows.noScalpFlow.Initiator
+import com.noScalpDapp.states.noScalpState
 import net.corda.core.contracts.StateAndRef
 import net.corda.core.identity.CordaX500Name
 import net.corda.core.messaging.startTrackedFlow
