@@ -1,4 +1,4 @@
-package com.noScalpDapp
+package com.noScalpDapp.states
 
 import net.corda.core.contracts.BelongsToContract
 import net.corda.core.contracts.*
@@ -7,6 +7,7 @@ import net.corda.core.contracts.Contract
 import net.corda.core.contracts.ContractState
 import net.corda.core.identity.Party
 import net.corda.core.transactions.LedgerTransaction
+import com.noScalpDapp.contracts.noScalpContract
 
 // *********
 // * State *

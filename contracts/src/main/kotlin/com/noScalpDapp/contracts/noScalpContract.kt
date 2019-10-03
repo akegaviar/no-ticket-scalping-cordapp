@@ -1,20 +1,21 @@
-package com.noScalpDapp
+package com.noScalpDapp.contracts
 
 import net.corda.core.contracts.*
 import net.corda.core.contracts.CommandData
 import net.corda.core.contracts.Contract
 import net.corda.core.transactions.LedgerTransaction
+import com.noScalpDapp.states.noScalpState
 
 // *****************
 // * Contract Code *
 // *****************
 // Contract ID to build the transaction.
-val NOSCALP_CONTRACT_ID = "com.noScalpDapp.noScalpContract"
+val NOSCALP_CONTRACT_ID = "com.noScalpDapp.contracts.noScalpContract"
 
 class noScalpContract : Contract {
     companion object {
         @JvmStatic
-        val ID = "com.noScalpDapp.noScalpContract"
+        val ID = "com.noScalpDapp.contracts.noScalpContract"
     }
     // Our Create command.
     class Create : CommandData

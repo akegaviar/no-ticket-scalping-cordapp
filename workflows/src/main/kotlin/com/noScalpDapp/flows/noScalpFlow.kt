@@ -1,9 +1,10 @@
-package com.noScalpDapp
+package com.noScalpDapp.flows
 
 import co.paralleluniverse.fibers.Suspendable
+import com.noScalpDapp.contracts.NOSCALP_CONTRACT_ID
 import net.corda.core.contracts.StateAndContract
-import com.noScalpDapp.noScalpFlow.Acceptor
-import com.noScalpDapp.noScalpFlow.Initiator
+import com.noScalpDapp.flows.noScalpFlow.Acceptor
+import com.noScalpDapp.flows.noScalpFlow.Initiator
 import net.corda.core.contracts.Command
 import net.corda.core.contracts.requireThat
 import net.corda.core.flows.*
@@ -12,6 +13,8 @@ import net.corda.core.transactions.SignedTransaction
 import net.corda.core.transactions.TransactionBuilder
 import net.corda.core.utilities.ProgressTracker
 import net.corda.core.utilities.ProgressTracker.Step
+import com.noScalpDapp.contracts.noScalpContract
+import com.noScalpDapp.states.noScalpState
 
 /**
  * This flow registers an on-ledger fact between two distributors (the [Initiator] and the [Acceptor]) as they automatically
